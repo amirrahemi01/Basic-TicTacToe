@@ -14,24 +14,18 @@ I Make a "TicTacToe MINI GAME" with these technologies:
        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
 ### List of components for this project:
-> - [x] LocalStorage
-> - [x] DarkMode
+> - [x] Start Page, include: NewGame - Setting - Share
+> - [x] LocalStorage for DarkMode/LiteMode & Custome Special Board 
 > - [x] Add, Edit, Delete, Completed(Check)
 > - [x] Responsive For Mobile
 > - [x] PWA - Web Application
-> - [ ] Extention for browser
-> - [ ] Cancel button for edit todo task container
-> - [ ] Custom font for persian language
-> - [ ] swipeable-list - left or right swip for tasks :)
-> - [ ] Auto focuse for input in creat todolist task
-> - [ ] Delete Popup 
-> - [ ] Search bar - ex: Search your todo task or something else
-> - [ ] Navbar for completed & not completed (Pending) & all task
-> - [ ] ClearAll Button (Delete all task from localstorage or database)
-> - [ ] Show how many task left over - ex: 2 tasks left
-> - [ ] Get time, day and put in "Creat ToDo Task"
-> - [ ] By default have some task as local storage
-> - [ ] DataBase instead of localstorage
+> - [ ] input custom Name for users
+> - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
+> - [ ] Watch history of game.
+> - [ ] Sound effect for movement :)
+> - [ ] Random name for bot/cpu OR selecte custom name for bot
+> - [ ] Custom .gif for winning or some movement
+> - [ ] Navbar
 
 ## Screenshots
 <div>
