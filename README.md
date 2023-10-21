@@ -24,7 +24,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Watch history of game.
 > - [ ] Sound effect for movement :)
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
-> - [ ] Custom .gif for winning or some movement. ex: confetti gif
+> - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
 
 ## Screenshots
