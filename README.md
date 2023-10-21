@@ -14,11 +14,11 @@ I Make a "TicTacToe MINI GAME" with these technologies:
        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
 ### List of components for this project:
-> - [x] Start Page, include: NewGame - Setting - Share
-> - [x] LocalStorage for DarkMode/LiteMode & Custome Special Board 
-> - [x] Add, Edit, Delete, Completed(Check)
-> - [x] Responsive For Mobile
-> - [x] PWA - Web Application
+> - [ ] Start Page, include: NewGame - Setting - Share
+> - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
+> - [ ] Add, Edit, Delete, Completed(Check)
+> - [ ] Responsive For Mobile
+> - [ ] PWA - Web Application
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
 > - [ ] Watch history of game.
