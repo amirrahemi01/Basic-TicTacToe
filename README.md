@@ -32,7 +32,6 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Get time, day and put in "Creat ToDo Task"
 > - [ ] By default have some task as local storage
 > - [ ] DataBase instead of localstorage
-> - [ ] Signup & Login 
 
 ## Screenshots
 <div>
