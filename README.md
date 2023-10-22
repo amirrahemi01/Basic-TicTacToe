@@ -26,6 +26,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
+> - [ ] Loader between Routes
 
 ## Screenshots
 <div>
