@@ -26,6 +26,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
 > - [ ] Loader between routes
+> - [ ] Custom error component for routes
 
 ## Screenshots
 <div>
