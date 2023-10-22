@@ -16,8 +16,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 ### List of components for this project:
 > - [ ] Start Page, include: NewGame - Setting - Share
 > - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
-> - [ ] Add, Edit, Delete, Completed(Check)
-> - [ ] Responsive For Mobile
+> - [ ] Responsive for mobile
 > - [ ] PWA - Web Application
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
@@ -26,7 +25,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
-> - [ ] Loader between Routes
+> - [ ] Loader between routes
 
 ## Screenshots
 <div>
