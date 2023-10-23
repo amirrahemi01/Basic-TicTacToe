@@ -15,14 +15,8 @@ h1 {
   text-align: center;
 }
 
-.home-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.main-background {
   background-image: url("./Assets/Images/background.jpg");
-  height: 100vh;
-  margin: 0;
-  padding: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -31,6 +25,16 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
 }
 
 .child-container {
@@ -134,26 +138,41 @@ h1 {
 
 .board-item {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+  justify-content: center;
   cursor: pointer;
   position: relative;
+
+  font-weight: 1000;
+  color: #fff;
+  font-size: 22px;
+}
+
+.blur {
+  backdrop-filter: blur(100px);
+  width: 100%;
+  height: max-content
 }
 
 .tile {
   color: currentColor;
-  font-size: 2em;
+  font-size: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+
+  border-radius: 100%;
+  border: 10px solid #de2556;
 }
 
 .right-border {
-  border-right: 0.2em solid #0074a6;
+  border: 10px solid #de2556;
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid #0074a6;
+  border: 10px solid #de2556;
 }
 
 .x-hover:hover::after {
