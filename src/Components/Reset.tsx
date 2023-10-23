@@ -1,6 +1,5 @@
 import GameState from './GameState';
-
-import React, { Component }  from 'react';
+import React from 'react';
 
 type Props = {
   gameState: GameState;

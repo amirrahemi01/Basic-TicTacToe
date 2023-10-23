@@ -11,8 +11,8 @@ gameOverSound.volume = 0.2;
 const clickSound = new Audio(clickSoundAsset);
 clickSound.volume = 0.5;
 
-const PLAYER_X: string = "X";
-const PLAYER_O: string = "O";
+const PLAYER_X: any = "◯";
+const PLAYER_O: string = "△";
 
 interface WinningCombination {
   combo: number[];
@@ -67,6 +67,10 @@ function TicTacToe() {
   const [userTurn, setUserTurn] = useState<string>(PLAYER_X);
   const [strikeClass, setStrikeClass] = useState<string | null>(null);
   const [gameState, setGameState] = useState<GameState>(GameState.inProgress);
+
+  console.log(tiles);
+  console.log(setTiles);
+
 
   const handleClick = (index: number) => {
     if (gameState !== GameState.inProgress) {

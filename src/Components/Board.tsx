@@ -1,7 +1,6 @@
-import Strike from "./Strike";
-import Tile from "./Tile";
-
 import React from 'react';
+import Tile from "./Tile";
+import Strike from "./Strike";
 
 type Props = {
     tiles: (string | null)[];
