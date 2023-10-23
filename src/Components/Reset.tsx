@@ -1,5 +1,7 @@
 import GameState from './GameState';
 
+import React, { Component }  from 'react';
+
 type Props = {
   gameState: GameState;
   onReset: () => void;

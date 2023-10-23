@@ -1,11 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import TicTacToe from './Components/TicTacToe';
+
+import React from 'react';
+import Home from './Pages/Home';
+import Game from './Pages/Game';
 
 function App() {
   return (
-    <div className="App">
-      <TicTacToe />
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='Game' element={<Game />} />
+        <Route path='Setting' element={<Game />} />
+        <Route path='Share' element={<Game />} />
+      </Routes>
+    </>
   );
 }
 

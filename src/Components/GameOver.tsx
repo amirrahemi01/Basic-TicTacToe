@@ -1,4 +1,5 @@
 import GameState from "./GameState"
+import React from 'react';
 
 type Props = {
     gameState: any;

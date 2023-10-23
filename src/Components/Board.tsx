@@ -1,6 +1,8 @@
 import Strike from "./Strike";
 import Tile from "./Tile";
 
+import React from 'react';
+
 type Props = {
     tiles: (string | null)[];
     onTileClick: (index: number) => void;
@@ -10,7 +12,7 @@ type Props = {
 
 const Board = ({ tiles, onTileClick, userTurn, strikeClass }: Props) => {
     return (
-        <div className="board-container">
+        <div className="board-item">
             {/* <Tile userTurn={userTurn} className="right-border bottom-border" value={tiles[0]} onClick={() => onTileClick(0)} />
             <Tile userTurn={userTurn} className="right-border bottom-border" value={tiles[1]} onClick={() => onTileClick(1)} />
             <Tile userTurn={userTurn} className="bottom-border" value={tiles[2]} onClick={() => onTileClick(2)} />

@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 type Props = {
   strikeClass: any;
 }

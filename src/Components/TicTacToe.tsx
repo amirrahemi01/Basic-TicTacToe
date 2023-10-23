@@ -3,8 +3,8 @@ import Board from "./Board";
 import GameOver from "./GameOver";
 import GameState from "./GameState";
 import Reset from "./Reset";
-import gameOverSoundAsset from "../Assets/gameOver.wav"
-import clickSoundAsset from "../Assets/click.wav";
+import gameOverSoundAsset from "../Assets/Sounds/gameOver.wav";
+import clickSoundAsset from "../Assets/Sounds/click.wav";
 
 const gameOverSound = new Audio(gameOverSoundAsset);
 gameOverSound.volume = 0.2;
@@ -111,7 +111,7 @@ function TicTacToe() {
   }, [gameState]);
 
   return (
-    <div>
+    <div className="board-container">
       <h1>Tic Tac Toe</h1>
       <Board
         userTurn={userTurn}

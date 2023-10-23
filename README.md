@@ -16,17 +16,16 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 ### List of components for this project:
 > - [ ] Start Page, include: NewGame - Setting - Share
 > - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
-> - [ ] Responsive for mobile
+> - [ ] Add, Edit, Delete, Completed(Check)
+> - [ ] Responsive For Mobile
 > - [ ] PWA - Web Application
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
 > - [ ] Watch history of game.
-> - [ ] Sound effect for movement :) 
+> - [ ] Sound effect for movement :)
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
-> - [ ] Loader between routes
-> - [ ] Custom error component for routes
 
 ## Screenshots
 <div>
