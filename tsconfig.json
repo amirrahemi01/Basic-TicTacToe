@@ -1,15 +1,12 @@
 {
   "compilerOptions": {
-
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    
-
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext",
+      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -23,7 +20,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve"
   },
   "include": [
     "src"
