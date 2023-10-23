@@ -1,6 +1,6 @@
-* {
+/* * {
   transition: 0.5s;
-}
+} */
 
 body {
   background-color: #242730;
@@ -78,7 +78,8 @@ h1 {
   box-sizing: border-box;
   color: #fff;
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  align-items: center;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -123,6 +124,10 @@ h1 {
   color: #000;
 }
 
+.home-container svg {
+  margin: 0 8px 0 0;
+}
+
 @media (min-width: 768px) {
   .home-container button {
     padding: .75rem 3rem;
@@ -134,6 +139,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.game-status {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .board-item {
@@ -152,7 +163,6 @@ h1 {
 .blur {
   backdrop-filter: blur(100px);
   width: 100%;
-  height: max-content
 }
 
 .tile {
@@ -258,4 +268,46 @@ h1 {
   color: white;
   width: 100%;
   font-size: 1.5em;
+}
+
+
+
+/* Setting Page */
+
+.setting-container {
+  display: flex;
+  background: url(./Assets/Images/01bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.modal-container {
+  align-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal-inner {
+  background-color: #f5f5f5;
+  background-color: var(--todo-form);
+  border-radius: 1rem;
+  box-shadow: 3px 3px 20px #00000091;
+  box-shadow: 3px 3px 20px var(--shadow);
+  color: #f5f5f5;
+  max-width: 640px;
+  padding: 15px;
+  position: relative;
+  width: 360px;
+  width: var(--main-width-inner);
 }
