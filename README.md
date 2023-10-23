@@ -21,7 +21,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
 > - [ ] Watch history of game.
-> - [ ] Sound effect for movement :) test
+> - [ ] Sound effect for movement :) 
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
