@@ -29,7 +29,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 
 ## Screenshots
 <div>
-  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/01.jpg](https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot.png?token=GHSAT0AAAAAACJHXPEHG5YRTHPT4QR4CMKUZJVZICA" style="border-radius: 1rem;">
+  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot.png?token=GHSAT0AAAAAACJHXPEHG5YRTHPT4QR4CMKUZJVZICA" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/02.jpg" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/03.jpg" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg" style="border-radius: 1rem;">
