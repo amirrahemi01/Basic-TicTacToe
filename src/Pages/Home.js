@@ -1,9 +1,33 @@
-import React from 'react'
+import { faArrowUpFromBracket, faDiceTwo, faGamepad, faGear, faPlay, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import Modal from '../Components/Modal';
 
 export default function Home() {
+
+  // Switch Case
+
+
+  // Modal
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  // Copy & Paste In Clipboard
+  const [copied, setCopied] = useState(false);
+
+  function copyUrl() {
+    const element = document.createElement("input");
+    element.value = window.location.href;
+    document.body.appendChild(element);
+    element.select();
+    document.execCommand("copy");
+    document.body.removeChild(element);
+    setCopied(true);
+  }
+
   return (
-    <div className="home-container">
+    <div className="home-container main-background">
       <div className='child-container'>
         <div className='child-left'>
           <div style={{ textTransform: "uppercase" }}>
@@ -27,13 +51,26 @@ export default function Home() {
             ends when one player achieves
             a winning combination or when
             the grid is completely filled,
-            resulting in a draw.a
+            resulting in a draw.
           </p>
         </div>
-        <div className='child-right'>
-          <Link to="Game" className="link">Play Game</Link> <br />
-          <Link className="link">Setting</Link> <br />
-          <Link className="link">Share</Link> <br />
+
+        <div className='child-right' >
+          <Link to="Game" className="link" >
+            <FontAwesomeIcon icon={faPlay} /> Play Game
+          </Link> 
+          <Link to="Setting" className="link"> <FontAwesomeIcon icon={faGear} /> Setting</Link> 
+          <Link className="link" onClick={() => {copyUrl(); setIsOpen(true);}}>
+            <FontAwesomeIcon icon={faArrowUpFromBracket} /> Share
+          </Link> 
+
+          <div>
+            {!copied ? "" : <>
+              <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+                <b>Copied to clipboard! Share it now :)</b>
+              </Modal>
+            </>}
+          </div>
         </div>
       </div>
     </div>
