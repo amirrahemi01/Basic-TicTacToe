@@ -14,7 +14,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
 ### List of components for this project:
-> - [ ] Start Page, include: NewGame - Setting - Share
+> - [ X ] Start Page, include: NewGame - Setting - Share
 > - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
 > - [ ] Add, Edit, Delete, Completed(Check)
 > - [ ] Responsive For Mobile
