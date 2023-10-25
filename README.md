@@ -14,9 +14,13 @@ I Make a "TicTacToe MINI GAME" with these technologies:
        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
 ### List of components for this project:
+> - [x] Routes Page
 > - [x] Start Page, include: NewGame - Setting - Share
+> - [x] Share button: copy url
+> - [ ] AI interaction player
+> - [x] Multiplayer interaction player
+> - [x] Go back btn for pages routes & components
 > - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
-> - [ ] Add, Edit, Delete, Completed(Check)
 > - [ ] Responsive For Mobile
 > - [ ] PWA - Web Application
 > - [ ] input custom Name for users
