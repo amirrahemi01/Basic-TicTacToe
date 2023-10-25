@@ -1,11 +1,14 @@
 import React from 'react'
 import IMG from "../Assets/Images/404.png"
+import { Link } from 'react-router-dom'
 
 export default function NotFound() {
   return (
-    <div>
+    <div className='error-container'>
         <img src={IMG} />
-        <p>Error</p>
+        <h2>Sorry</h2>
+        <p>did not find the page.</p>
+        <Link to="/" className='main-btn'>Go To Home</Link>
     </div>
   )
 }

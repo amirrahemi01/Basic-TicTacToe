@@ -399,3 +399,12 @@ a {
 .setting-box h2 {
   text-align: center;
 }
+
+/* 404 Container */
+.error-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
