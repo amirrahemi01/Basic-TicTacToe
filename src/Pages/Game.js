@@ -23,7 +23,7 @@ export default function Game() {
       <div className="game-container blur" style={{ height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
 
         {!isMultiplayer ? (<>
-          <h2 style={{ letterSpacing: "30px" }}>Select Game Type</h2>
+          <h2 className='title'>Select Game Type</h2>
 
           <Back onBackClick={goBack}  gameTitle="TicTacToe" setting={false} />
           

@@ -31,8 +31,8 @@ export default function Home() {
       <div className='child-container'>
         <div className='child-left'>
           <div style={{ textTransform: "uppercase" }}>
-            <h1 style={{ letterSpacing: "30px" }}>Lets Play The</h1>
-            <h1 style={{ letterSpacing: "22px" }}>TICTACTOE</h1>
+            <h1>Lets Play The</h1>
+            <h1>TICTACTOE</h1>
           </div>
           <p>
             Tic Tac Toe, also known as
