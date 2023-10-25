@@ -1,20 +1,38 @@
 import GameState from "./GameState"
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from "./Modal";
+import GameOverIMG from "../Assets/Images/gameOver.png"
 
 type Props = {
     gameState: any;
 }
 
 function GameOver({ gameState }: Props) {
+
+    // Modal
+    const [isOpen, setIsOpen] = useState(true);
+
     switch (gameState) {
         case GameState.inProgress:
             return <></>;
         case GameState.firstUserWins:
-            return <div className="game-over">X WINS</div>;
+            return (
+                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+                    <div className="game-over"><img src={GameOverIMG} /><span className="tile-gameover">◯</span> WINS</div>
+                </Modal>
+            )
         case GameState.secondeUserWins:
-            return <div className="game-over">O WINS</div>;
+            return (
+                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+                    <div className="game-over"><img src={GameOverIMG} /><span className="tile-gameover">△</span> WINS</div>
+                </Modal>
+            )
         case GameState.draw:
-            return <div className="game-over">Draw</div>;
+            return (
+                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+                    <div className="game-over"><img src={GameOverIMG} />Draw</div>
+                </Modal>
+            )
         default:
             return <></>;
     }

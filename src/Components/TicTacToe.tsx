@@ -116,7 +116,6 @@ function TicTacToe() {
 
   return (
     <div className="board-container">
-      <h1>Tic Tac Toe</h1>
       <Board
         userTurn={userTurn}
         tiles={tiles}

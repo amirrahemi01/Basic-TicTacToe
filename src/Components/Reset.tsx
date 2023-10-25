@@ -12,7 +12,7 @@ const Reset = ({ gameState, onReset }: Props) => {
   }
 
   return (
-    <button onClick={onReset} className='reset-btn'>Play Again</button>
+    <button onClick={onReset} className="main-btn">Play Again</button>
   )
 }
 
