@@ -58,11 +58,11 @@ export default function Home() {
         <div className='child-right' >
           <Link to="Game" className="link" >
             <FontAwesomeIcon icon={faPlay} /> Play Game
-          </Link> 
-          <Link to="Setting" className="link"> <FontAwesomeIcon icon={faGear} /> Setting</Link> 
-          <Link className="link" onClick={() => {copyUrl(); setIsOpen(true);}}>
+          </Link>
+          <Link to="Setting" className="link"> <FontAwesomeIcon icon={faGear} /> Setting</Link>
+          <Link className="link" onClick={() => { copyUrl(); setIsOpen(true); }}>
             <FontAwesomeIcon icon={faArrowUpFromBracket} /> Share
-          </Link> 
+          </Link>
 
           <div>
             {!copied ? "" : <>
