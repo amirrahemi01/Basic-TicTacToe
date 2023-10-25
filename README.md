@@ -21,7 +21,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [x] Multiplayer interaction player
 > - [x] Go back btn for pages routes & components
 > - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
-> - [ ] Responsive For Mobile
+> - [x] Responsive For Mobile
 > - [ ] PWA - Web Application
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
