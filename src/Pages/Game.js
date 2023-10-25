@@ -35,7 +35,7 @@ export default function Game() {
           </Link>
 
           <Modal open={isOpen} onClose={() => setIsOpen(false)} >
-            <b>AI BOT is currently is not active. Coming Soon</b>
+            <b>AI BOT currently is not active. Coming Soon</b>
           </Modal>
         </>) : ""}
 
