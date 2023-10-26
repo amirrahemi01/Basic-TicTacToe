@@ -20,13 +20,13 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] AI interaction player
 > - [x] Multiplayer interaction player
 > - [x] Go back btn for pages routes & components
-> - [ ] LocalStorage for DarkMode/LiteMode & Custome Special Board 
+> - [x] Sound effect for movement :)
+> - [x] LocalStorage for DarkMode/LiteMode & Custome Special Board 
 > - [x] Responsive For Mobile
 > - [ ] PWA - Web Application
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
 > - [ ] Watch history of game.
-> - [ ] Sound effect for movement :)
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
 > - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar

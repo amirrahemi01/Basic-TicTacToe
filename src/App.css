@@ -41,7 +41,7 @@ div {
 
 
 body {
-  background-color: #242730;
+  background-color: var(--primary-color);
   color: white;
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
@@ -650,11 +650,11 @@ hr {
     width: 300px;
   }
 
-  .main-background {
-    /* width: max-content; */
+  /* .main-background {
+    width: max-content;
     height: 100vh;
     display: flex;
-  }
+  } */
 
   /* Setting */
   .setting-box {
@@ -681,10 +681,14 @@ hr {
     width: 333px;
   }
 
+  .game-box {
+    padding: 0;
+  }
+
   .setting-container {
     all: unset;
     display: block;
-    background: #000;
+    background: var(--primary-color);
   }
 
   .setting-display {
