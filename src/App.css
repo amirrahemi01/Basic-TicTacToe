@@ -24,11 +24,13 @@ div {
 .light {
   --primary-color: #fff;
   --secondary-color: #000;
+  --second-btn: #DE2556;
 }
 
 .dark {
   --primary-color: #000000;
   --secondary-color: #fff;
+  --second-btn: #878787;
 }
 
 
@@ -49,6 +51,11 @@ h1 {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+hr {
+  border: #3d3d3d 1px solid;
+  width: 100%;
 }
 
 .main-background {
@@ -206,7 +213,7 @@ a {
 }
 
 .blur {
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(20px);
   width: 100%;
 }
 
@@ -331,7 +338,7 @@ a {
   border: none;
   padding: 20px 15px;
   border-radius: 1rem;
-  width: 400px;
+  width: auto;
   font-size: 1.2rem;
   margin: 1rem 0 0 0;
   cursor: pointer;
@@ -407,6 +414,7 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -419,6 +427,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .setting-btn {
@@ -427,6 +436,12 @@ a {
   padding: 12px 8px;
   font-size: 14px;
   margin: 0;
+  background: transparent;
+  color: var(--second-btn);
+}
+
+.setting-footer {
+  font-size: 12px;
 }
 
 /* Theme Switch Toggle */
@@ -458,7 +473,7 @@ a {
 	height: 20px;
 	background: #fff;
 	border-radius: 90px;
-  transition: 0.5s ease-in;
+  transition: 0.4s ease-in-out;
 }
 
 

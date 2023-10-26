@@ -1,9 +1,10 @@
-import { faAngleLeft, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faChessBoard, faDiceFive, faEnvelope, faGear, faInfo, faLanguage, faPhone, faQuestion, faShieldHalved, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Back from '../Components/Back';
 import ThemeSwitch from '../Components/ThemeSwitch';
+import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Setting() {
 
@@ -17,69 +18,82 @@ export default function Setting() {
       <div className='blur' style={{ height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
         <div className='setting-box'>
           <Back onBackClick={goBack} gameTitle="Setting" setting={true} x="yes" />
+
           <div className="setting-item"><p>Dark Mode</p> <ThemeSwitch /></div>
           <div className="setting-item">
             <p>Board</p>
-            <button className='main-btn setting-btn'>Choose Your Board</button>
-            {/* Classic - traing - modern - versus - co-op -  */}
+            <div>
+              <button className='main-btn setting-btn'>Choose Your Board</button>
+              <FontAwesomeIcon icon={faChessBoard} />
+              {/* Classic - traing - modern - versus - co-op -  */}
+            </div>
           </div>
 
           <div className="setting-item">
             <p>Support</p>
-            <button className='main-btn setting-btn'>Contact Us</button>
+            <div>
+              <button className='main-btn setting-btn'>Contact Us</button>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </div>
           </div>
 
           <div className="setting-item">
             <p>Language</p>
-            <button className='main-btn setting-btn'>English - US</button>
+            <div>
+              <button className='main-btn setting-btn'>English - US</button>
+              <FontAwesomeIcon icon={faLanguage} />
+            </div>
           </div>
 
           <div className="setting-item">
             <p>Rate Game</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faStar} />
           </div>
 
           <div className="setting-item">
             <p>privacy policy</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faShieldHalved} />
           </div>
 
           <div className="setting-item">
             <p>terms of service</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faInfo} />
           </div>
 
-          <hr /> 
+          <hr />
           <h3>Social Media</h3>
 
           <div className="setting-item">
             <p>Twitter(x)</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faTwitter} />
           </div>
 
           <div className="setting-item">
             <p>Instagram</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faInstagram} />
           </div>
 
           <div className="setting-item">
             <p>GitHub</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faGithub} />
           </div>
 
           <hr />
           <div className="setting-item">
             <p>Other Games</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faDiceFive} />
           </div>
 
           <div className="setting-item">
             <p>Exit Game</p>
-            <button className='main-btn setting-btn'>Star</button>
+            <FontAwesomeIcon icon={faArrowRightFromBracket} />
           </div>
 
-          <p>TicTacToe - developed by <b>Amir Rahemi</b></p>
-          <code>V 1.0.0</code>
+          <hr />
+          <main className="setting-footer">
+            <p>TicTacToe - developed by <b>Amir Rahemi</b></p>
+            <code>V 1.0.0</code>
+          </main>
 
         </div>
       </div>
