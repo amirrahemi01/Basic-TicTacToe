@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
-
 type Props = {
   onChange: () => void;
 }
 
 export default function ThemeSwitch() {
 
+
+  if (document.documentElement.className = "null") {
+    document.documentElement.className = "light";
+  }
 
     function setDarkMode() {
         document.documentElement.className = "dark";

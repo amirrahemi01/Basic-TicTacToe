@@ -1,5 +1,5 @@
 div {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 ::-webkit-scrollbar {
@@ -23,10 +23,12 @@ div {
 
 .light {
   --primary-color: #fff;
+  --secondary-color: #000;
 }
 
 .dark {
   --primary-color: #000000;
+  --secondary-color: #fff;
 }
 
 
@@ -389,7 +391,7 @@ a {
 .setting-box {
   width: 450px;
   background: var(--primary-color);
-  color: #000;
+  color: var(--secondary-color);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -413,7 +415,7 @@ a {
   text-indent: -9999px;
   width: 80px;
   height: 39px;
-  background: grey;
+  background: #808080;
   display: block;
   border-radius: 100px;
   position: relative;
@@ -434,7 +436,7 @@ a {
 }
 
 .theme-switch:checked + .theme-switch {
-	background: #bada55;
+	background: #3fdb58;
 }
 
 .theme-switch:checked + .theme-switch:after {
