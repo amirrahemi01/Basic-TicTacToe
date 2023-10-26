@@ -244,13 +244,13 @@ hr {
   border: 10px solid #de2556;
 }
 
-.x-hover:hover::after {
-  content: "X";
+.◯-hover:hover::after {
+  content: "◯";
   opacity: 0.4;
 }
 
-.o-hover:hover::after {
-  content: "O";
+.△-hover:hover::after {
+  content: "△";
   opacity: 0.4;
 }
 
@@ -334,6 +334,10 @@ hr {
 
 .game-over img {
   width: 300px;
+}
+
+img.animation {
+  position: absolute;
 }
 
 .main-btn {
@@ -617,6 +621,8 @@ hr {
     grid-template-rows: 140px 140px 140px;
   }
 
+  .board-container button {width: 100%;}
+
   .game-over {
     margin: 0;
     width: 400px;
@@ -644,6 +650,8 @@ hr {
     grid-template-columns: 120px 120px 120px;
     grid-template-rows: 120px 120px 120px;
   }
+
+  .board-container button {width: 100%;}
 
   .game-over {
     margin: 0;
@@ -691,7 +699,7 @@ hr {
 }
 
 .game-box h2 {
-  margin: 0px 6rem;
+  margin: 0 8rem 0 70px;
   opacity: 0;
   width: 70px;
 }

@@ -24,11 +24,12 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [x] LocalStorage for DarkMode/LiteMode & Custome Special Board 
 > - [x] Responsive For Mobile
 > - [ ] PWA - Web Application
+> - [x] Error 404 page
+> - [x] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] input custom Name for users
 > - [ ] Custom type of game. ex: play with bot/cpu OR two players/ friendly
 > - [ ] Watch history of game.
 > - [ ] Random name for bot/cpu OR selecte custom name for bot
-> - [ ] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] Navbar
 
 ## Screenshots

@@ -1,41 +1,39 @@
-import GameState from "./GameState"
 import React, { useState } from 'react';
-import Modal from "./Modal";
-import GameOverIMG from "../Assets/Images/gameOver.png"
+import Modal from './Modal';
+import GameOverIMG from '../Assets/Images/gameOver.png';
+import Animation from '../Assets/animation/confetti.gif';
+import GameState from './GameState';
 
-type Props = {
-    gameState: any;
-}
 
-function GameOver({ gameState }: Props) {
-
+const GameOver = ({ gameState }: any) => {
     // Modal
     const [isOpen, setIsOpen] = useState(true);
+    
+
+    const getGameOverContent = (symbol: string, message: string) => (
+        <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)}>
+            <div className="game-over">
+                <img src={GameOverIMG} />
+                <span className="tile-gameover">{symbol}</span>
+                <p>{message}</p>
+                {symbol !== 'Draw' && <img className="animation" src={Animation} />}
+            </div>
+        </Modal>
+    );
 
     switch (gameState) {
         case GameState.inProgress:
-            return <></>;
+            return null;
         case GameState.firstUserWins:
-            return (
-                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
-                    <div className="game-over"><img src={GameOverIMG} /><span className="tile-gameover">◯</span> WINS</div>
-                </Modal>
-            )
+            return getGameOverContent('◯', 'WINS');
         case GameState.secondeUserWins:
-            return (
-                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
-                    <div className="game-over"><img src={GameOverIMG} /><span className="tile-gameover">△</span> WINS</div>
-                </Modal>
-            )
+            return getGameOverContent('△', 'WINS');
         case GameState.draw:
-            return (
-                <Modal open={isOpen} onClose={() => setIsOpen(false)} >
-                    <div className="game-over"><img src={GameOverIMG} />Draw</div>
-                </Modal>
-            )
+            return getGameOverContent('', 'Draw');
         default:
-            return <></>;
+            return null;
     }
-}
+    
+};
 
-export default GameOver
+export default GameOver;

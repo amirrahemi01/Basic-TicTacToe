@@ -12,7 +12,7 @@ const clickSound = new Audio(clickSoundAsset);
 clickSound.volume = 0.5;
 
 const PLAYER_X: any = "◯";
-const PLAYER_O : string = "△";
+const PLAYER_O: string = "△";
 
 interface WinningCombination {
   combo: number[];

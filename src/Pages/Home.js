@@ -66,7 +66,7 @@ export default function Home() {
 
           <div>
             {!copied ? "" : <>
-              <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+              <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)} >
                 <b>Copied to clipboard! Share it now :)</b>
               </Modal>
             </>}
