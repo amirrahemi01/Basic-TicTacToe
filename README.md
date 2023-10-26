@@ -47,7 +47,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 
 ## Demo
 
-Check working <a href="https://amirrahemi-todo.netlify.app/" target="_blank">DEMO</a>
+Check working <a href="https://amirrahemi-tictactoe.vercel.app/" target="_blank">DEMO</a>
 
 
 ## Run 
