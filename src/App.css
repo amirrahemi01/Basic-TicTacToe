@@ -175,6 +175,17 @@ a {
   }
 }
 
+.game-box {
+    width: 400px;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
 .board-container {
   display: flex;
   flex-direction: column;
@@ -389,7 +400,8 @@ a {
 }
 
 .setting-box {
-  width: 450px;
+  width: 400px;
+  height: 80vh;
   background: var(--primary-color);
   color: var(--secondary-color);
   margin: 0 auto;
@@ -403,6 +415,20 @@ a {
   text-align: center;
 }
 
+.setting-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.setting-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 8px;
+  font-size: 14px;
+  margin: 0;
+}
+
 /* Theme Switch Toggle */
 .theme-switch[type=checkbox]{
 	height: 0;
@@ -413,8 +439,8 @@ a {
 .theme-switch {
   cursor: pointer;
   text-indent: -9999px;
-  width: 80px;
-  height: 39px;
+  width: 60px;
+  height: 30px;
   background: #808080;
   display: block;
   border-radius: 100px;
@@ -428,12 +454,13 @@ a {
 	position: absolute;
 	top: 5px;
 	left: 5px;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	background: #fff;
 	border-radius: 90px;
-	transition: 0.5s;
+  transition: 0.5s ease-in;
 }
+
 
 .theme-switch:checked + .theme-switch {
 	background: #3fdb58;

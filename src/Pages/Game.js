@@ -22,30 +22,32 @@ export default function Game() {
     <div className="main-background" >
       <div className="game-container blur" style={{ height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
 
-        {!isMultiplayer ? (<>
-          <h2 className='title'>Select Game Type</h2>
+        <div className="game-box">
+          {!isMultiplayer ? (<>
+            <h2 className='title'>Select Game Type</h2>
 
-          <Back onBackClick={goBack}  gameTitle="TicTacToe" setting={false} />
-          
-          <Link className="main-btn" onClick={() => setIsOpen(true)}>
-            <FontAwesomeIcon icon={faRobot} />AI BOT </Link><br />
-          <Link className="main-btn" onClick={() => { setMultiplayer(!isMultiplayer); }}>
-            <FontAwesomeIcon icon={faGamepad} />
-            Multiplayer
-          </Link>
+            <Back onBackClick={goBack} gameTitle="TicTacToe" setting={false} />
 
-          <Modal open={isOpen} onClose={() => setIsOpen(false)} >
-            <b>AI BOT currently is not active. Coming Soon</b>
-          </Modal>
-        </>) : ""}
+            <Link className="main-btn" onClick={() => setIsOpen(true)}>
+              <FontAwesomeIcon icon={faRobot} />AI BOT </Link><br />
+            <Link className="main-btn" onClick={() => { setMultiplayer(!isMultiplayer); }}>
+              <FontAwesomeIcon icon={faGamepad} />
+              Multiplayer
+            </Link>
 
-        <br />
+            <Modal open={isOpen} onClose={() => setIsOpen(false)} >
+              <b>AI BOT currently is not active. Coming Soon</b>
+            </Modal>
+          </>) : ""}
 
-        {isMultiplayer ? (<>
-          <Back onBackClick={() => { setMultiplayer(!isMultiplayer); }}  gameTitle="TicTacToe" setting={false} x="yes" />
-          <TicTacToe />
-        </>) : ""}
+          <br />
 
+          {isMultiplayer ? (<>
+            <Back onBackClick={() => { setMultiplayer(!isMultiplayer); }} gameTitle="TicTacToe" setting={false} x="yes" />
+            <TicTacToe />
+          </>) : ""}
+
+        </div>
 
       </div>
     </div>
