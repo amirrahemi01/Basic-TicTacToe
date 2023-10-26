@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Back from '../Components/Back';
+import ThemeSwitch from '../Components/ThemeSwitch';
 
 export default function Setting() {
 
@@ -16,7 +17,7 @@ export default function Setting() {
       <div className='blur' style={{ height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
         <div className='setting-box'>
         <Back onBackClick={goBack}  gameTitle="Setting" setting={true} x="yes" />
-          <p>Theme:</p>
+          <p>Theme:</p> <ThemeSwitch />
           <p>Board:</p>
         </div>
       </div>

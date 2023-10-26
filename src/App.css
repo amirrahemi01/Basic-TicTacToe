@@ -1,6 +1,6 @@
-/* * {
+div {
   transition: 0.5s;
-} */
+}
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -19,6 +19,14 @@
   background-color: #c8c8c8;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.light {
+  --primary-color: #fff;
+}
+
+.dark {
+  --primary-color: #000000;
 }
 
 
@@ -251,7 +259,7 @@ a {
 .strike-column-2 {
   height: 100%;
   width: 4px;
-  left: 48%;
+  left: 50%;
 }
 
 .strike-column-3 {
@@ -380,17 +388,64 @@ a {
 
 .setting-box {
   width: 450px;
-  background: #fff;
+  background: var(--primary-color);
   color: #000;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
+  padding: 1rem;
 }
 
 .setting-box h2 {
   text-align: center;
 }
+
+/* Theme Switch Toggle */
+.theme-switch[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.theme-switch {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 80px;
+  height: 39px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  font-size: 1rem;
+  font-size: 10px;
+}
+
+.theme-switch:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.5s;
+}
+
+.theme-switch:checked + .theme-switch {
+	background: #bada55;
+}
+
+.theme-switch:checked + .theme-switch:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.theme-switch:active:after {
+	width: 130px;
+}
+
 
 /* 404 Container */
 .error-container {
