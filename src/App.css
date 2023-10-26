@@ -677,13 +677,24 @@ hr {
 /* Height */
 @media only screen and (max-height: 888px) and (max-width: 500px) {
 
+  body {
+    background: var(--primary-color);
+  }
+
   .game-status {
     width: 333px;
   }
 
   .game-box {
     padding: 0;
-  }
+    width: auto;
+}
+
+.game-box h2 {
+  margin: 0px 6rem;
+  opacity: 0;
+  width: 70px;
+}
 
   .setting-container {
     all: unset;
