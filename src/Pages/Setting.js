@@ -15,7 +15,7 @@ export default function Setting() {
 
   return (
     <div className='setting-container'>
-      <div className='blur' style={{ height: "100vh", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
+      <div className='blur setting-display'>
         <div className='setting-box'>
           <Back onBackClick={goBack} gameTitle="Setting" setting={true} x="yes" />
 

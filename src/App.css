@@ -21,16 +21,22 @@ div {
   cursor: pointer;
 }
 
+:root {
+  --transition: 0.4s;
+}
+
 .light {
   --primary-color: #fff;
   --secondary-color: #000;
   --second-btn: #DE2556;
+  --hr: #bbbbbb;
 }
 
 .dark {
   --primary-color: #000000;
   --secondary-color: #fff;
   --second-btn: #878787;
+  --hr: #3d3d3d;
 }
 
 
@@ -51,10 +57,11 @@ h1 {
 a {
   text-decoration: none;
   color: #fff;
+  transition: var(--transition);
 }
 
 hr {
-  border: #3d3d3d 1px solid;
+  border: var(--hr) 1px solid;
   width: 100%;
 }
 
@@ -183,13 +190,13 @@ hr {
 }
 
 .game-box {
-    width: 400px;
-    height: 80vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    padding: 1rem;
+  width: 400px;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
 
 }
 
@@ -345,6 +352,11 @@ hr {
   font-weight: 900;
 }
 
+.main-btn:hover {
+  background: #000;
+  color: #878787;
+}
+
 /* Game Page */
 
 .game-container .main-btn :active {
@@ -404,11 +416,20 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100vh;
+}
+
+.setting-display {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .setting-box {
   width: 400px;
-  height: 80vh;
+  height: auto;
   background: var(--primary-color);
   color: var(--secondary-color);
   margin: 0 auto;
@@ -428,6 +449,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .setting-btn {
@@ -445,10 +467,10 @@ hr {
 }
 
 /* Theme Switch Toggle */
-.theme-switch[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+.theme-switch[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 .theme-switch {
@@ -465,29 +487,29 @@ hr {
 }
 
 .theme-switch:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 20px;
-	height: 20px;
-	background: #fff;
-	border-radius: 90px;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
   transition: 0.4s ease-in-out;
 }
 
 
-.theme-switch:checked + .theme-switch {
-	background: #3fdb58;
+.theme-switch:checked+.theme-switch {
+  background: #3fdb58;
 }
 
-.theme-switch:checked + .theme-switch:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
+.theme-switch:checked+.theme-switch:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
 }
 
 .theme-switch:active:after {
-	width: 130px;
+  width: 130px;
 }
 
 
@@ -585,7 +607,7 @@ hr {
 
   .main-btn {
     padding: 17px 10px;
-    width: 285px;
+    width: auto;
     font-size: 15px;
     margin: 0;
   }
@@ -601,7 +623,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 444px) {
+@media only screen and (max-width: 450px) {
   .home-container p {
     font-size: 14px;
     width: 95%;
@@ -613,7 +635,7 @@ hr {
 
   .main-btn {
     padding: 17px 10px;
-    width: 285px;
+    width: auto;
     font-size: 15px;
     margin: 0;
   }
@@ -626,5 +648,61 @@ hr {
   .game-over {
     margin: 0;
     width: 300px;
+  }
+
+  .main-background {
+    /* width: max-content; */
+    height: 100vh;
+    display: flex;
+  }
+
+  /* Setting */
+  .setting-box {
+    width: 90%;
+    height: auto;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .setting-display {
+    height: auto;
+  }
+}
+
+
+/* Height */
+@media only screen and (max-height: 888px) and (max-width: 500px) {
+
+  .game-status {
+    width: 333px;
+  }
+
+  .setting-container {
+    all: unset;
+    display: block;
+    background: #000;
+  }
+
+  .setting-display {
+    display: flex;
+    width: max-content;
+    margin: 11px auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .setting-box {
+    width: auto;
+    height: auto;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem;
   }
 }
