@@ -423,6 +423,18 @@ img.animation {
   height: 100vh;
 }
 
+.setting-item label {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+.setting-item select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
+
 .setting-display {
   height: auto;
   display: flex;
@@ -453,8 +465,9 @@ img.animation {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
+
+.setting-container p {cursor: pointer;}
 
 .setting-btn {
   width: fit-content;

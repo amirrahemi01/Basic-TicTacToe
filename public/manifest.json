@@ -1,6 +1,11 @@
 {
+  "name": "TicTacToe",
   "short_name": "TicTacToe",
-  "name": "TicTacToe Game By AmirRahemi",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "a Tic Tac Toe with TypeScrip.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +23,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "related_applications": [
+    {
+      "platform": "github",
+      "url": "https://amirrahemi01.github.io/Rock-Paper-Scissors-Game/"
+    }
+  ]
 }
