@@ -24,6 +24,7 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [x] LocalStorage for DarkMode/LiteMode & Custome Special Board 
 > - [x] Responsive For Mobile
 > - [ ] PWA - Web Application
+> - [ ] Multiple language
 > - [x] Error 404 page
 > - [x] Custom .gif for winning or some movement. ex: confetti gif 🎊
 > - [ ] input custom Name for users
