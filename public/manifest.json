@@ -6,6 +6,7 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "description": "a Tic Tac Toe with TypeScrip.",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "favicon.ico",
