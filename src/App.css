@@ -30,13 +30,15 @@ div {
   --secondary-color: #000;
   --second-btn: #DE2556;
   --hr: #bbbbbb;
+  --lan: #939393;
 }
 
 .dark {
   --primary-color: #000000;
   --secondary-color: #fff;
   --second-btn: #878787;
-  --hr: #3d3d3d;
+  --hr: #e2e2e2;
+  --lan: #ebebeb;
 }
 
 
@@ -431,7 +433,13 @@ img.animation {
 
 .setting-item select {
   font-size: 0.9rem;
-  padding: 2px 5px;
+  padding: 2px 0;
+  border: none;
+  background: var(--lan);
+  border-radius: 5px;
+  margin: 8px;
+  width: 50%;
+  text-align: center;
 }
 
 
@@ -467,7 +475,15 @@ img.animation {
   align-items: center;
 }
 
-.setting-container p {cursor: pointer;}
+.setting-container p {
+  cursor: pointer;
+}
+
+.flx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 .setting-btn {
   width: fit-content;
@@ -634,7 +650,9 @@ img.animation {
     grid-template-rows: 140px 140px 140px;
   }
 
-  .board-container button {width: 100%;}
+  .board-container button {
+    width: 100%;
+  }
 
   .game-over {
     margin: 0;
@@ -664,7 +682,9 @@ img.animation {
     grid-template-rows: 120px 120px 120px;
   }
 
-  .board-container button {width: 100%;}
+  .board-container button {
+    width: 100%;
+  }
 
   .game-over {
     margin: 0;
@@ -709,13 +729,13 @@ img.animation {
   .game-box {
     padding: 0;
     width: auto;
-}
+  }
 
-.game-box h2 {
-  margin: 0 8rem 0 70px;
-  opacity: 0;
-  width: 70px;
-}
+  .game-box h2 {
+    margin: 0 8rem 0 70px;
+    opacity: 0;
+    width: 70px;
+  }
 
   .setting-container {
     all: unset;

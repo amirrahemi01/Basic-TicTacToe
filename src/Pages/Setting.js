@@ -72,7 +72,7 @@ export default function Setting() {
 
           <div className="setting-item">
             <p>Language</p>
-            <div>
+            <div className="flx">
             <select name="language" id="language-select">
               <option value="">choose language--</option>
               <option value="en" selected>English</option>
