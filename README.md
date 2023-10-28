@@ -38,10 +38,10 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 
 ## Screenshots
 <div style="background: #eee">
-  <img width="400" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot1.png" style="border-radius: 1rem;">
-  <img width="400" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot2.png" style="border-radius: 1rem;">
-  <img width="400" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot3.png" style="border-radius: 1rem;">
-  <img width="200" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/public/logo.png" style="border-radius: 1rem;">
+  <img width="500" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot1.png" style="border-radius: 1rem;">
+  <img width="500" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot2.png" style="border-radius: 1rem;">
+  <img width="500" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot3.png" style="border-radius: 1rem;">
+  <img width="250" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/public/logo.png" style="border-radius: 1rem;">
 </div>
 
 ## Demo
