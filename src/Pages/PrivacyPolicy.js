@@ -15,8 +15,7 @@ export default function PrivacyPolicy() {
             <h1 id="privacy-policy">Privacy Policy</h1>
             <p><strong>Effective date:</strong> Octobr 28, 2023</p>
             <h2 id="introduction">Introduction</h2>
-            <p>Welcome to [Your Website/App] (“we,” “our,” or “us”). At [Your
-                Website/App], we are committed to protecting your privacy and ensuring
+            <p>Welcome to <span>TicTacToe</span>.We are committed to protecting your privacy and ensuring
                 the security of your personal information. This Privacy Policy explains
                 how we collect, use, share, and protect your personal data when you
                 visit our website or use our services.</p>

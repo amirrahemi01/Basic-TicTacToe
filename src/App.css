@@ -511,6 +511,7 @@ img.animation {
   justify-content: center;
   align-items: center;
 }
+
 .columns-3 img {
   width: 100px;
   height: 65px;
@@ -522,7 +523,14 @@ img.animation {
   color: var(--secondary-color);
   background: var(--primary-color);
   margin: 5px 10px;
-  }
+}
+
+.term-and-privacy-container span {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 1px 5px;
+  border-radius: 1rem;
+}
 
 .setting-footer {
   font-size: 12px;

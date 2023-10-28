@@ -18,7 +18,7 @@ export default function TermOfService() {
 
             <h2>Acceptance of Terms</h2>
 
-            <p>Welcome to [Your Website/App] ("we," "our," or "us"). By accessing or using our website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+            <p>Welcome to <span>TicTacToe</span> We By accessing or using our website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
 
             <h2>Use of Our Services</h2>
 
