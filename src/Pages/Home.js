@@ -1,13 +1,11 @@
-import { faArrowUpFromBracket, faDiceTwo, faGamepad, faGear, faPlay, faRobot } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
 import Modal from '../Components/Modal';
+import { Link } from 'react-router-dom';
+
+import { faArrowUpFromBracket, faGear, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
-
-  // Switch Case
-
 
   // Modal
   const [isOpen, setIsOpen] = useState(false);
@@ -65,11 +63,13 @@ export default function Home() {
           </Link>
 
           <div>
-            {!copied ? "" : <>
+            {!copied ? "" : 
+            <>
               <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)} >
                 <b>Copied to clipboard! Share it now :)</b>
               </Modal>
-            </>}
+            </>
+            }
           </div>
         </div>
       </div>

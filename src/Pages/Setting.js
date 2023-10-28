@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 import Back from '../Components/Back';
-import ThemeSwitch from '../Components/ThemeSwitch';
 import Modal from '../Components/Modal';
+import ThemeSwitch from '../Components/ThemeSwitch';
+import { useNavigate } from 'react-router-dom';
 
 import Img0 from "../Assets/Images/0.jpg";
 import Img1 from "../Assets/Images/1.jpg";
@@ -11,7 +11,7 @@ import Img3 from "../Assets/Images/3.jpg";
 import Img4 from "../Assets/Images/4.jpg";
 import Img5 from "../Assets/Images/5.jpg";
 
-import { faArrowRightFromBracket, faChessBoard, faDiceFive, faEarthAmericas, faEnvelope, faGear, faInfo, faLanguage, faPhone, faQuestion, faShieldHalved, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faChessBoard, faDiceFive, faEarthAmericas, faEnvelope, faInfo, faShieldHalved, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -24,6 +24,8 @@ export default function Setting() {
 
   // Modal
   const [isOpen, setIsOpen] = useState(false);
+
+  // Window Link For Onclick Button
   const modal = () => setIsOpen(!isOpen);
   const support = () => window.location = "mailto:amirrahemi01@gmail.com";
   const x = () => window.location = "https://x.com/madeby_amir";
@@ -33,8 +35,6 @@ export default function Setting() {
   const privacy = () => window.location = "PrivacyPolicy";
   const term = () => window.location = "TermOfService";
   const exit = () => window.location = "/";
-
-
 
   return (
     <div className='setting-container'>
@@ -46,13 +46,16 @@ export default function Setting() {
 
           <div className="setting-item">
             <p onClick={modal}>Board</p>
+
             <div onClick={modal}>
               <button className='main-btn setting-btn'>Choose Your Board</button>
               <FontAwesomeIcon icon={faChessBoard} />
               <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)} >
+
                 <div onClick={() => alert("Application is updating, comming soon")} >
-                  <h2 style={{textAlign: "center",display: "flex",justifyContent: "center"}}>Boards</h2>
+                  <h2 style={{ textAlign: "center", display: "flex", justifyContent: "center" }}>Boards</h2>
                   <div className="setting-boards">
+
                     <div className="columns-3">
                       <img src={Img0} />
                       <h4>Classic</h4>
@@ -85,10 +88,8 @@ export default function Setting() {
 
                   </div>
                 </div>
+
               </Modal>
-
-
-
             </div>
           </div>
 

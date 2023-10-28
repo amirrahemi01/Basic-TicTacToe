@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
 import TicTacToe from '../Components/TicTacToe'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faGamepad, faGear, faL, faRobot } from '@fortawesome/free-solid-svg-icons';
 import Modal from '../Components/Modal';
 import Back from '../Components/Back';
+
+import { Link, useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGamepad, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 export default function Game() {
 
