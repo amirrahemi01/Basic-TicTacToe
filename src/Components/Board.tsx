@@ -30,7 +30,7 @@ export default function Board({ tiles, onTileClick, userTurn, strikeClass }: Pro
       {renderTile(6, 'right-border')}
       {renderTile(7, 'right-border')}
       {renderTile(8, 'a')}
-      <Strike strikeClass={strikeClass} />
+      <Strike strikeClass={strikeClass || 'defaultClassName'} />
     </div>
   );
 }
