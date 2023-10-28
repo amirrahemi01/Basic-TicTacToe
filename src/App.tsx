@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import Game from './Pages/Game';
 import Setting from './Pages/Setting';
 import NotFound from './Pages/NotFound';
+import TermOfService from './Pages/TermOfService';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='Game' element={<Game />} />
         <Route path='Setting' element={<Setting />} />
+        <Route path='TermOfService' element={<TermOfService />} />
+        <Route path='PrivacyPolicy' element={<PrivacyPolicy />} />
         <Route path='*' element={<NotFound />}/>
       </Routes>
     </>

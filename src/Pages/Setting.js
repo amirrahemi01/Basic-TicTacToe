@@ -1,11 +1,19 @@
-import { faArrowRightFromBracket, faChessBoard, faDiceFive, faEarthAmericas, faEnvelope, faGear, faInfo, faLanguage, faPhone, faQuestion, faShieldHalved, faStar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Back from '../Components/Back';
 import ThemeSwitch from '../Components/ThemeSwitch';
-import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Modal from '../Components/Modal';
+
+import Img0 from "../Assets/Images/0.jpg";
+import Img1 from "../Assets/Images/1.jpg";
+import Img2 from "../Assets/Images/2.jpg";
+import Img3 from "../Assets/Images/3.jpg";
+import Img4 from "../Assets/Images/4.jpg";
+import Img5 from "../Assets/Images/5.jpg";
+
+import { faArrowRightFromBracket, faChessBoard, faDiceFive, faEarthAmericas, faEnvelope, faGear, faInfo, faLanguage, faPhone, faQuestion, faShieldHalved, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Setting() {
 
@@ -22,6 +30,8 @@ export default function Setting() {
   const git = () => window.location = "https://github.com/amirrahemi01";
   const insagram = () => window.location = "https://instagram.com/amirrahemiii";
   const other = () => window.location = "https://amirrahemi01.github.io/Rock-Paper-Scissors-Game";
+  const privacy = () => window.location = "PrivacyPolicy";
+  const term = () => window.location = "TermOfService";
   const exit = () => window.location = "/";
 
 
@@ -39,22 +49,42 @@ export default function Setting() {
             <div onClick={modal}>
               <button className='main-btn setting-btn'>Choose Your Board</button>
               <FontAwesomeIcon icon={faChessBoard} />
-              {/* Classic - traing - modern - versus - co-op -  */}
-
-
               <Modal open={isOpen} onClose={() => setIsOpen(!isOpen)} >
-                <>
-                  <FontAwesomeIcon icon={faChessBoard} />
-                  <FontAwesomeIcon icon={faEnvelope} />
-                  <FontAwesomeIcon icon={faShieldHalved} />
-                  <FontAwesomeIcon icon={faStar} />
-                  <FontAwesomeIcon icon={faLanguage} />
-                  <FontAwesomeIcon icon={faInfo} />
-                  <FontAwesomeIcon icon={faInstagram} />
-                  <FontAwesomeIcon icon={faGithub} />
-                  <FontAwesomeIcon icon={faDiceFive} />
-                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                </>
+                <div onClick={() => alert("Application is updating, comming soon")} >
+                  <h2 style={{textAlign: "center",display: "flex",justifyContent: "center"}}>Boards</h2>
+                  <div className="setting-boards">
+                    <div className="columns-3">
+                      <img src={Img0} />
+                      <h4>Classic</h4>
+                    </div>
+
+                    <div className="columns-3">
+                      <img src={Img1} />
+                      <h4>traning</h4>
+                    </div>
+
+                    <div className="columns-3">
+                      <img src={Img2} />
+                      <h4>modern</h4>
+                    </div>
+
+                    <div className="columns-3">
+                      <img src={Img3} />
+                      <h4>versus</h4>
+                    </div>
+
+                    <div className="columns-3">
+                      <img src={Img4} />
+                      <h4>co-op</h4>
+                    </div>
+
+                    <div className="columns-3">
+                      <img src={Img5} />
+                      <h4>all-in-one</h4>
+                    </div>
+
+                  </div>
+                </div>
               </Modal>
 
 
@@ -73,31 +103,30 @@ export default function Setting() {
           <div className="setting-item">
             <p>Language</p>
             <div className="flx">
-            <select name="language" id="language-select">
-              <option value="">choose language--</option>
-              <option value="en" selected>English</option>
-              <option value="pr">Persian</option>
-              <option value="sp">Spanish</option>
-              <option value="fr">French</option>
-              <option value="ne">Netherland</option>
-              <option value="po">Polish</option>
-            </select>
+              <select name="language" id="language-select">
+                <option disabled value="pr">Persian</option>
+                <option disabled value="en" selected>English</option>
+                <option disabled value="sp">Spanish</option>
+                <option disabled value="fr">French</option>
+                <option disabled value="ne">Netherland</option>
+                <option disabled value="po">Polish</option>
+              </select>
               {/* <button className='main-btn setting-btn'>English - US</button> */}
               <FontAwesomeIcon icon={faEarthAmericas} />
             </div>
           </div>
 
-          <div className="setting-item">
+          <div className="setting-item" onClick={() => alert('Star GitHub Repository')} >
             <p>Rate Game</p>
             <FontAwesomeIcon icon={faStar} />
           </div>
 
-          <div className="setting-item">
+          <div className="setting-item" onClick={privacy}>
             <p>privacy policy</p>
             <FontAwesomeIcon icon={faShieldHalved} />
           </div>
 
-          <div className="setting-item">
+          <div className="setting-item" onClick={term}>
             <p>terms of service</p>
             <FontAwesomeIcon icon={faInfo} />
           </div>
