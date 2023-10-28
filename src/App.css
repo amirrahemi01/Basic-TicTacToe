@@ -426,7 +426,7 @@ img.animation {
 }
 
 .setting-container button:hover {
-  all: unset;
+  background: none;
 }
 
 .setting-item label {
@@ -782,8 +782,8 @@ img.animation {
 
   .setting-display {
     display: flex;
-    width: max-content;
-    margin: 11px auto;
+    width: 100%;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
   }
