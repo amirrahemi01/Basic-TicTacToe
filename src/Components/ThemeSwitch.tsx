@@ -9,39 +9,34 @@ export default function ThemeSwitch() {
     document.documentElement.className = "light";
   }
 
-  const setDarkMode = () => {
-    document.documentElement.className = 'dark';
-    localStorage.setItem('selectedThemeType', 'dark');
-  };
+  function setDarkMode() {
+    document.documentElement.className = "dark";
+    localStorage.setItem("selectedThemeType", "dark");
+  }
 
-  const setLightMode = () => {
-    document.documentElement.className = 'light';
-    localStorage.setItem('selectedThemeType', 'light');
-  };
+  function setLightMode() {
+    document.documentElement.className = "light";
+    localStorage.setItem("selectedThemeType", "light");
+  }
 
-  useEffect(() => {
-    const selectedTheme = localStorage.getItem("selectedThemeType");
+  const selectedTheme = localStorage.getItem("selectedThemeType");
 
-    if (selectedTheme === "dark") {
-      setDarkMode();
-    }
-  }, []);
+  if (selectedTheme === "dark") {
+    setDarkMode();
+  }
 
-
-
-  const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
+  function toggleTheme(e: React.ChangeEvent<HTMLInputElement>) {
     if (e.target.checked) setDarkMode();
     else setLightMode();
-  };
+  }
 
   return (
     <>
       <input
         onChange={toggleTheme}
-        defaultChecked={localStorage.getItem('selectedThemeType') === 'dark'}
+        defaultChecked={selectedTheme === 'dark'}
         className="theme-switch"
-        type="checkbox"
-        id="switch"
+        type="checkbox" id="switch"
       />
       <label className="theme-switch" htmlFor="switch">Toggle</label>
     </>

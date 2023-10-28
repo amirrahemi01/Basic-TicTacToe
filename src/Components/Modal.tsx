@@ -12,21 +12,17 @@ type Props = {
 export default function Modal({ open, onClose, children }: Props) {
     if (!open) return null;
 
-    function stopClick(e: React.MouseEvent<HTMLDivElement>) {
-        e.stopPropagation();
-    }
-
     return (
-        <div className="modal-container" onClick={onClose}>
-          <div className="modal-inner" onClick={stopClick}>
-            <FontAwesomeIcon
+      <div className="modal-container" onClick={onClose} >
+      <div className="modal-inner" onClick={e => e.stopPropagation()} >
+          <FontAwesomeIcon
               onClick={onClose}
               icon={faSquareXmark}
               className="close-btn"
               size="xl"
-            />
-            {children}
-          </div>
+          />
+          {children}
+      </div>
         </div>
       );
     };
