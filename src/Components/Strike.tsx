@@ -2,7 +2,7 @@
 import React from 'react';
 
 type Props = {
-  strikeClass: any;
+  strikeClass: string;
 }
 
 function Strike({strikeClass}: Props) {

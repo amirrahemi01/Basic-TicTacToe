@@ -1,24 +1,20 @@
 import React from 'react';
 
 type Props = {
-    className : any;
-    value : any;
-    onClick : any;
-    userTurn : any;
+    className : string;
+    value: string | null;
+    onClick: () => void;
+    userTurn: string | null;
 }
 
 const Tile = ({className, value, onClick, userTurn}: Props) => {
-
-    let hoverClass = null;
-    if (value == null && userTurn != null) {
-        hoverClass = `${userTurn.toLocaleLowerCase()}-hover`;
-    }
+  const hoverClass = value === null && userTurn !== null ? `${userTurn.toLowerCase()}-hover` : '';
 
   return (
     <div onClick={onClick} className={`tile ${className} ${hoverClass}`}>
         {value}
     </div>
-  )
-}
+  );
+};
 
 export default Tile

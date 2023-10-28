@@ -3,7 +3,6 @@ enum GameState {
     secondeUserWins,
     draw,
     inProgress,
-
 }
 
 export default GameState;

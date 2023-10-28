@@ -1,5 +1,3 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
 
 import React from 'react';
 import Home from './Pages/Home';
@@ -8,6 +6,9 @@ import Setting from './Pages/Setting';
 import NotFound from './Pages/NotFound';
 import TermOfService from './Pages/TermOfService';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
+
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
