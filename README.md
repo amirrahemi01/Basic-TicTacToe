@@ -37,12 +37,12 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 > - [ ] Navbar
 
 ## Screenshots
-
+<div style="background: #eee">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot1.png" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot2.png" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot3.png" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/public/logo.png" style="border-radius: 1rem;">
-
+</div>
 
 ## Demo
 
