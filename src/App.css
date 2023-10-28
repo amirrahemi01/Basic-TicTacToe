@@ -353,7 +353,7 @@ img.animation {
   border-radius: 1rem;
   width: auto;
   font-size: 1.2rem;
-  margin: 1rem 0 0 0;
+  margin: 0 0 0 0;
   cursor: pointer;
   font-weight: 900;
 }
@@ -423,6 +423,10 @@ img.animation {
   background-size: cover;
   position: relative;
   height: 100vh;
+}
+
+.setting-container button:hover {
+  all: unset;
 }
 
 .setting-item label {
