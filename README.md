@@ -36,9 +36,8 @@ I Make a "TicTacToe MINI GAME" with these technologies:
 ## Screenshots
 <div>
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot1.png" style="border-radius: 1rem;">
-  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/02.jpg" style="border-radius: 1rem;">
-  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/03.jpg" style="border-radius: 1rem;">
-  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg" style="border-radius: 1rem;">
+  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot2.png" style="border-radius: 1rem;">
+  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot3.png" style="border-radius: 1rem;">
   <img width="300" src="https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true" style="border-radius: 1rem;">
 </div>
 
