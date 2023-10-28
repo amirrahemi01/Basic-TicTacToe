@@ -1,6 +1,7 @@
 # Basic TicTacToe REACT.JS
 
 I Make a "TicTacToe MINI GAME" with these technologies:
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer" style="text-decoration: none !important;"></a>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
@@ -38,17 +39,12 @@ I Make a "TicTacToe MINI GAME" with these technologies:
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot1.png" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot2.png" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/screenShot3.png" style="border-radius: 1rem;">
-  <img width="300" src="https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true" style="border-radius: 1rem;">
+  <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TicTacToe/main/public/logo.png" style="border-radius: 1rem;">
 </div>
-
-
-
-<!-- ![App Screenshot](https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true) -->
-
 
 ## Demo
 
-Check working <a href="https://amirrahemi-tictactoe.vercel.app/" target="_blank">DEMO</a>
+Check Demo <a href="https://amirrahemi-tictactoe.vercel.app/" target="_blank">DEMO</a>
 
 
 ## Run 
